@@ -1,7 +1,5 @@
 package rbb.poc.dummy.controller;
 
-import javax.annotation.Resource;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,6 +20,12 @@ public class LogonController {
 	@ResponseBody
 	public LogonResponse logon(LogonResquest request) {
 		return LogonService.logon(request);
+	}
+	
+	@RequestMapping(value = "/getSuccess", method = RequestMethod.GET)
+	@ResponseBody
+	public String test() {
+		return "success";
 	}
 	
 }

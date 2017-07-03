@@ -3,16 +3,16 @@ package rbb.poc.dummy.entity;
 public class LogonResquest {
 	
 	private String userID;
-	private String passWorld;
+	private String password;
 	
 	public LogonResquest() {
 		super();
 	}
 
-	public LogonResquest(String userID, String passWorld) {
+	public LogonResquest(String userID, String password) {
 		super();
 		this.userID = userID;
-		this.passWorld = passWorld;
+		this.password = password;
 	}
 
 	public String getUserID() {
@@ -23,12 +23,13 @@ public class LogonResquest {
 		this.userID = userID;
 	}
 
-	public String getPassWorld() {
-		return passWorld;
+	public String getPassword() {
+		return password;
 	}
 
-	public void setPassWorld(String passWorld) {
-		this.passWorld = passWorld;
+	public void setPassword(String password) {
+		this.password = password;
 	}
+
 
 }
