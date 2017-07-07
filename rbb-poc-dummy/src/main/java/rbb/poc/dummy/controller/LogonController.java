@@ -22,10 +22,4 @@ public class LogonController {
 		return LogonService.logon(request);
 	}
 	
-	@RequestMapping(value = "/getSuccess", method = RequestMethod.GET)
-	@ResponseBody
-	public String test() {
-		return "success";
-	}
-	
 }
